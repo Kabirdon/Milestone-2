@@ -1,4 +1,4 @@
-package jenvueb;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.BufferedReader;
@@ -14,9 +14,11 @@ import org.json.JSONObject;
 public class WeatherUI extends JFrame implements ActionListener {
 
     // Declare components
-    private JLabel nameLabel, cityLabel, resultLabel;
-    private JTextField nameField, cityField;
-    private JButton submitButton;
+    private JLabel nameLabel, cityLabel;
+	JLabel resultLabel;
+    JTextField nameField;
+	JTextField cityField;
+    JButton submitButton;
 
     public WeatherUI() {
         super("Weather App");
